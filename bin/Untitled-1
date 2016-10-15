@@ -1,0 +1,23 @@
+//Se declara así
+@mixin large-text {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: #ff0000;
+}
+//se incluye así
+.page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+}
+//sale al css así 
+page-title {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  padding: 4px;
+  margin-top: 10px; }
